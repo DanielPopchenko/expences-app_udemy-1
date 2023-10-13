@@ -1,59 +1,66 @@
 .expenseItem {
-  max-width: 800px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: rgb(143, 143, 143);
-  border-radius: 10px;
-  padding: 17px 10px;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(143, 143, 143);
+    border-radius: 10px;
+    padding: 17px 10px;
 }
 
-.expenseItem + .expenseItem {
-  margin-top: 20px;
+.expenseItem+.expenseItem {
+    margin-top: 20px;
 }
 
 .expenseItem_price {
-  cursor: pointer;
-  background-color: cornflowerblue;
-  padding: 17px 10px;
-  border-radius: 10px;
-  font-weight: bold;
-  transition: ease-in 0.2s;
+    cursor: pointer;
+    background-color: cornflowerblue;
+    padding: 17px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: ease-in 0.2s;
 }
 
 .expenseItem_price:hover {
-  background-color: rgb(143, 177, 240);
-  color: #313030;
+    background-color: rgb(143, 177, 240);
+    color: #313030;
+}
+
+.expenses {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .expenseDate {
-  display: flex;
-  flex-direction: column;
-  width: 5.9rem;
-  height: 5.8rem;
-  border: 1px solid #ececec;
-  background-color: #2a2a2a;
-  color: white;
-  border-radius: 12px;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 5.9rem;
+    height: 5.8rem;
+    border: 1px solid #ececec;
+    background-color: #2a2a2a;
+    color: white;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
 }
 
 .expenseDate__month {
-  font-size: 1rem;
-  font-weight: bold;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 .expenseDate__year {
-  font-size: 1rem;
+    font-size: 1rem;
 }
 
 .expenseDate__day {
-  font-size: 1.5rem;
-  font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .card {
-  border-radius: 12px;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
 }

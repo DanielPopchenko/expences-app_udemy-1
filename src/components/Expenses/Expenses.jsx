@@ -6,7 +6,7 @@ import styles from './Expenses.module.css';
 const Expenses = ({ expenses }) => {
   console.log(expenses);
   return (
-    <div className={styles.expences}>
+    <div className={styles.expenses}>
       {expenses.map((expense) => (
         <ExpenceItem key={expense.id} expense={expense} />
       ))}
