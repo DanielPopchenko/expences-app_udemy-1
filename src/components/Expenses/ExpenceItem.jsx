@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { PropTypes } from 'prop-types';
 import styles from './Expenses.module.css';
 import ExpenseDate from './ExpenseDate';
