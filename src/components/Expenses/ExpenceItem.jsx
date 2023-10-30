@@ -5,19 +5,18 @@ import ExpenseDate from './ExpenseDate';
 import Card from '../UI/Card';
 
 const ExpenceItem = ({ expense }) => {
-  const [title, setTitle] = useState(expense.title);
-
-  const handleClick = () => setTitle('Updated title');
+  // ! Диструктуризируем пропс expense
+  const { title, amount, date } = expense;
 
   return (
     <Card className={styles.expenseItem}>
-      <ExpenseDate date={expense.date} />
+      <ExpenseDate date={date} />
       <h2>{title}</h2>
-      <span className={styles.expenseItem_price}>${expense.amount}</span>
+      <span className={styles.expenseItem_price}>${amount}</span>
 
-      <button type="button" onClick={handleClick}>
+      {/* <button type="button" onClick={handleClick}>
         Change the Title
-      </button>
+      </button> */}
     </Card>
   );
 };
